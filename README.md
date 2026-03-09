@@ -1,15 +1,7 @@
 ## Hi there 👋
+## Learning Topics
 
-<!--
-**naveena4180/naveena4180** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
--
-
--->AI 900 Basics of Artificial Intelligence
+--> AI 900 Basics of Artificial Intelligence
 
 -->AZ 900 Basics of cloud computing
 
