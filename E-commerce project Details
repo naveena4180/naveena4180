@@ -1,0 +1,45 @@
+__E-commerce project__
+
+Project introduction:
+
+Demo application --- open Telemetry
+Terminology:
+2 tier architecture: Simple client and server. Client communicates directly with Database
+3 tier architecture: Comprehensive, In between Client and database layer, BUSINESS LAYER comes
+
+Open-source project: free source code, Community driven
+Enterprise project: Source code manages by the company and developers develop and sold with price
+
+project architecture:
+Internet
+Load Gateway—for QA testing
+Reverse proxy—nginx and other services
+
+And these all go into Front end services (multiple in different languages of code to understand easier)
+
+Create VM(EC2)
+Create a IAM user ---Learn and understand RBAC roles and permissions (Authentication &authorization)
+Connect Ec2 (VM) from locally or directly from AWS management console
+Install Dockers
+Install Kubectl ( command line tool  to interact with K8’s through APIs)
+Install terraform
+---learn Linux commands as a root user, disk space, space increase with few techniques, CPU & memory check)
+
+Access the project locally from EC2 machine.
+Install Git
+Clone the project
+Docker compose up (to pull all the images)
+
+Docker lifecycle (Docker build, run ---Learn Docker basic commands)
+Containerization with a Docker of each file (--Learn writing the Docker file and how to push into Registry)
+
+
+
+
+
+
+
+
+
+
+
