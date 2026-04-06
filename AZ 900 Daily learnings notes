@@ -1,0 +1,489 @@
+E-commerce project
+
+Project introduction:
+
+Demo application --- open Telemetry
+Terminology:
+2 tier architecture: Simple client and server. Client communicates directly with Database
+3 tier architecture: Comprehensive, In between Client and database layer, BUSINESS LAYER comes
+
+Open-source project: free source code, Community driven
+Enterprise project: Source code manages by the company and developers develop and sold with price
+
+project architecture:
+Internet
+Load Gateway—for QA testing
+Reverse proxy—nginx and other services
+
+And these all go into Front end services (multiple in different languages of code to understand easier)
+
+Create VM(EC2)
+Create a IAM user ---Learn and understand RBAC roles and permissions (Authentication &authorization)
+Connect Ec2 (VM) from locally or directly from AWS management console
+Install Dockers
+Install Kubectl ( command line tool  to interact with K8’s through APIs)
+Install terraform
+---learn Linux commands as a root user, disk space, space increase with few techniques, CPU & memory check)
+
+Access the project locally from EC2 machine.
+Install Git
+Clone the project
+Docker compose up (to pull all the images)
+
+Docker lifecycle (Docker build, run ---Learn Docker basic commands)
+Containerization with a Docker of each file (--Learn writing the Docker file and how to push into Registry)
+
+
+From Udemy
+AI 900[ 2026]
+author: Ranga karanam
+
+Azure AI fundamentals- Introduction
+step1: Introduction to Artificial Intelligence and Machine Learning
+
+stronger AI and Narrow AI
+Exploring Machine Learning with examples
+Machine learning vs Traditional programming
+Azure AI fundamentals and what you will learn
+Three approaches for building AI solutions in Azure
+Using pre-Trained Models: Get intelligence from text, images
+Simple models using Azure Machine Learning/Automative 
+Building Complex models
+Different Types of AI workloads:
+Content Moderation & personalization – filtering inappropriate con
+Computer vision workloads
+Natural language processing workloads
+Knowledge Mining workloads
+Documental Intelligence workloads
+Generative AI workloads- creating new images or text based on learned patterns
+
+AI workloads and its scenarios
+Pre Trained Models
+Simple Models
+Complex Models
+Exploring Pre-Trained Models- Azure AI services 
+. Azure Ai services – Make AI easy
+AI without building custom models
+Does not need machine -learning expertise
+Exposed as APIs
+
+Key services:
+Get intelligence from
+Images:
+Forms and Documents
+Text:
+Audio:
+Use Generative AI:
+Others:
+
+Microsoft Foundry is a Unified Platform for entire AI lifecycle — End to End AI Development Platform
+Single place to manage all your AI models and applications.
+If we want specific Ai service, we can go with that.
+Instead of using AI services in Azure portal, Microsoft Foundry has specific page.
+Ai.azure.com   ai.azure.com/allResources
+Key capability 1:
+Model selection & Testing
+Capability 2: Customization & Deployment
+Capability 3: Governance & Monitoring
+Microsoft Foundry:
+1.	Foundry Resource or Multi-service Resource
+2.	Single-service Resource
+Foundry Resource or Multi-service Resource
+Access multiple AI services using a single key
+All Ai usage is billed together under one Resource
+Best for applications using multiple services ( Speech+vision+language)
+Single-service Resource
+Only one specific Azure AI service
+Each service has its own key and endpoint
+Ideal when you only need one AI service
+
+Azure AI vision
+Azure AI Face
+Azure AI Speech service
+Azure AI Translator service
+Azure AI language
+
+Azure AI services – NLP-Scenarios:
+ Recommend Service: Detect sentiment, Key phrases and named entities from text   ---- Azure AI language-Text Analytics API
+
+
+Other Azure AI services:
+Azure AI Bot service
+
+AI-102:
+
+
+** Generative AI**
+AI: create machines that can simulate human like intelligence and behaviour
+Machine learning: learning from examples
+Generative AI: Learning from examples to create a new content.
+ Generative AI is generating new content
+. instead of making predictions, Generative AI focuses on creating new Data samples
+Examples:
+Text generation: writing Emails, essays &poems, generating ideas
+Writing code: write 7 debug & analyse programs
+Images Generation: creating paintings, drawings
+
+
+Service                                Description                                           Example use cases
+
+Azure AI Vision         Analyse images and videos using pre-trained vision models   Object detection, image tagging, generate captions, very Basic OCR operations
+
+Azure AI custom Vision Train custom image classification models tailored to your use case      identity product types, detect brand logos
+Azure AI Document intelligence   extracts structured data from unstructured documents extract customer and vendor details from invoice, extract, extract pay stub details
+
+Azure AI language performs NLP tasks
+Text summarization
+Azure AI face detects, identity and analyse human faces and images
+Azure Ai speech speech to text and text to speech and translate spoken language
+Azure AI translator real time multi language translation of text
+Azure Ai content safety Detect and filter harmful, offensive, or inappropriate content
+Azure Ai search Add enterprise search to your applications
+Azure OpenAI Access open AI models (GPT-Text, codex-code, DALLE-image) through Azure
+
+Azure Machine learning Full-featured ML development and deployment platform for custom ML workflows
+Azure Machine learning Automatic ML
+Azure AI foundry    End to End platform to build, evaluate and Deploy AI services
+
+
+
+
+
+
+
+
+AZ 900:
+
+Goal: Understand the Enterprise Journey from managing the data centre’s  to adopting cloud.
+
+What is a server - Servers
+Where the servers live – Data centres
+Why managing the data centre’s is difficult
+Solution: Cloud
+
+--Why do enterprise need thousands of servers
+
+Before that, we should understand what is a server is
+
+It is a powerful computer designed to provide the services
+Server: The provider ( Finds the request, process it and send the response to the client
+Client: The requestor (Browser)
+
+Servers serve: Websites: Html pages, images, videos
+Files: Documents, photos, backups
+Emails: Sending and receiving messages
+
+Browser request--server- {find, process, send the result}response
+There are many servers-Database servers, Messaging servers its not only the powerful device, it serves the services
+
+Can one server handle everything?
+
+No, Traffic spike: Millions of users, if accessing it
+It is a powerful computer, but it has its own limits---capacity
+Conclusion: relying on a single server is risky for most applications
+For large bank—we have lots of apps, internal applications, mobile applications
+for that, we need thousands of servers==needed to run all kinds of applications reliably
+Challenge: these many servers need massive power and space, so that, not recommended in the office space
+
+These all servers need a house –it is infrastructure---i.e Data Center
+Data center: A secure place for hosting servers
+Massive scale: Houses hundreds, thousands, or even millions of servers
+
+It is not just a building: Needs specialized infrastructure
+Power: uninterrupted power supply
+Cooling: make sure not to be over heated
+Networking: high speed connectivity
+Security: Hosts key business systems
+
+It is more expensive
+For startups, they have to buy infra initially, they have to buy more servers in advance, if app goes viral
+We don’t know, whether its usage will high or not.
+Expensive and high maintenance
+Solution is : cloud
+Instead buying, we can rent for what we use.
+
+Cloud Key Terminology:
+
+Elasticity: Ability to automatically scale resources up or down based on demand
+Agility: Ability to move fast and respond quickly to business needs
+Quickly deliver software, quickly provision infra
+Global Reach and Geo distribution: The ability to expand to new markets and deploy applications to data center around the world quickly
+Availability: Are applications available when users need them
+Latency: Reduce the time to respond in b/w client and server
+Cloud concepts:
+Netflix increases the servers on Friday night, releases the servers on Monday.
+For startups, launches new app with minimal cost— pay as you go
+A product team provisions infra in minutes to test new features ad releases update faster—Agility
+Few applications like health care provides the service even in maintenance—High Availability
+A saas company deploys its application in multiple regions to server customers worldwide with low latency -- Global Reach and Geo Distribution
+A media platform serves videos from locations closest to users for faster playback – low latency
+
+Buy servers massive for lower cost – Economies for sale
+
+Region: if one datacentre, there are some challenges as if one DC fails
+If two Dc’s, in one region- if one region not available
+If Dc’s in two different regions, mostly solved, latency (partly solved)
+Choosing the Right Region factors:
+1.	Compliance!  Be aware about regulations
+Why: some countries require citizen data to stay within borders.
+2.	Latency: Be close to your users
+Goal: Choose a Region closest to the majority of your users.
+3.	Services Available: Does the Region support the services you need? New services launch in specific regions first
+4.	Pricing- check pricing in different regions
+5.	Cost varies b/w regions
+
+Why use multiple Regions?
+For low latency: To serve users faster by placing resources closer to them
+Global Footprint: Expand services and reach customers worldwide.
+Data Residency: Store data in specific geographic locations to meet regulations.
+High Availability: Reduce Downtime by running apps in multiple regions
+Disaster recovery: protect against regional failures. (ex: natural disasters)
+
+Zone: How to achieve high availability from a single Region.?
+Deploying in multiple zones in a region protect against local failures (Power outage, fire)
+Solution: Use Zones (Availability Zones)
+Zones: Isolated locations within a Region
+Each zone has independent power, cooling, n/w connectivity
+High speed Link:
+Advantage: Increased availability and fault tolerance
+
+Virtualization
+Physical Server: CPUs+Memory+storage
+Early days, we have used one application on one physical server
+Now” increased efficiency by virtualization (Increased resource utilization by sharing hardware resources)
+Software (Hypervisor) to run multiple VM’s on the single physical server
+Azure VM:
+Create and lifecycle management---start and stop, delete
+Load balancing and auto scaling for multiple VM instances
+Attach storage to your VM instances
+Manage Network connectivity and configuration for your VM instances
+Goal:
+Setup VM instances as HTTP (web) server
+And distribute load with Load balancers
+Azure VM’s:
+1.	Image is important: operating system and software
+2.	Family of the VM : Size
+3.	How many Vcpus and memory
+4.	Disk (Attach the Disk)
+
+Commands:
+For installing the nginx
+#!bin/sh
+Sudo su
+apt-get -y update
+apt-get -y install nginx
+echo “Hello World”
+echo
+
+*From the Azure portal, in Advanced section We can put above commands in custom data, instead of updating from the portal.
+if we are not getting the response from the portal, use curl https://ip address for fetching the request.
+
+For high availability:
+1.	For single VM’s use premium SSD or ultra-Disk 99.9%
+2.	Standard SSD Managed Disks 99.5%
+3.	Standard HDD managed Disks 95%
+Two or more instances in the same Availability set 99.9%
+Availability set: Logical grouping of the VM’s
+Fault Domain:  Group of VM’s share Common power and network
+Update Domain: Group of VM’s that are rebooted (updated) at the same time
+Two or more instances in multiple Availability Zones in the same Azure Region ensur99.9%
+
+VM scale set: It allow us to create multiple load balanced VM’s and scale manually or automatically according to the defined schedule.
+Network interface: it is created, when we want to communicate the resource with other Networks (Internet, Azure (within other resources), on-prem resources)
+Designing good solutions with VM’s
+Availability   Are the applications available, when users need them   Availability sets and scale sets
+Scalability   Can we handle a growth in users, traffic or data size without any drop in performance   VM size, scale sets and Load balancers
+Resilience   Ability of system to provide acceptable behaviour even when one or more parts of the system fail   Scale sets and Load balancers
+Disaster recovery    How to keep your systems running in face of disasters   site Recovery
+Managing costs   You want to keep costs low    Auto scaling (Elasticity), Reservations, Azure spot instances
+Geo -Distribution Distribute applications across regions and Zones   scale sets and Load balancers
+
+Managed services:
+VM
+VMSS
+Load balancer in VMSS to balance the load for high availability
+Other approaches, 
+
+a)	Vertical scaling ( App is a bigger instance( high RAM, Faster CPU, More Disk for the existing VM)
+b)	Horizontal scaling ( Increasing the VM’s, preferably Horizontal scaling for high availability)
+IAAS, PAAS
+
+Iaas: Use only infra from cloud provider
+Application and its run time, OS managed by user, rest Virtualization, Hardware, Networking will handle by cloud provider
+
+Here we responsible for 
+Application code and Runtime
+Configuration load balancing
+Auto scaling
+OS upgrades and patches
+Availability..etc
+ Applications
+Application Runtime
+OS 
+Virtualization
+Physical Hardware
+Networking
+Ex: VM, VMSS
+Paas: Ready to deploy the code 
+Application code will handle by user, Rest application runtime, OS, rest handle by cloud provider
+Cloud provider responsible for Application run time, OS patches and upgrades, Auto scaling and configured Load balancing..
+Ex: Azure App services (logic app, web app), 
+Databases (Azure SQL Database, Amazon RDS, Google cloud SQL)
+Queue, AI, ML..etc
+Applications
+Application Runtime
+OS 
+Virtualization
+Physical Hardware
+Networking
+Azure App Service:
+ Fully Managed platform for building, deploying and scaling the Web apps.
+. Also supports REST Apis, and mobile Back ends
+. Natively supports >NET, >NET core, Node.JS, Java, python, PHP
+Choose App service plan: Defines a set of compute resources for a Web app.
+Features:
+Automated Deployment and management
+Auto scaling
+’Built in Load balancing
+
+Kubernetes: (CAAS) container as a service ( it sits b/w Iaas and paas)
+Not fully paas ( still we manage work nodes, workloads..configs, Network)
+
+To Create Web APP:
+Subscription, Resource group, OS, Runtime stack, App service Plan
+Scaling—Scale out (increasing the instances count)
+               --- Scale in ( decreasing the instances count)
+
+App Service Plan: what kind of Hardware + Configuration for the hardware (including features) we need to choose for the app
+Microservices:
+For customer app service—one microservice
+For database---one Microservice
+Payments app service—one microservice----etc
+
+All enterprises heading towards Microservice compared to Monolithic application
+We can use different programming language for each microservice
+But deployments will complex
+solution: Containers
+Docker – Containers
+We all need Docker images for each microservice
+Image has: Application Runtime(JDK for Java, Python for python, Node JS for .net)
+Application code and dependencies
+Vms virtualizes the hardware and Containers virtualize os
+Runs the same way on any infra
+Advantages:
+Containers are Lightweight.
+Like VM.s it doesn’t have guest os
+Docker provides isolation for containers’
+Docker is cloud neutral
+** we can access with the public Ip address from the web URL, Public IP is charged, not free.
+When we stop the VM and resource, we cannot see the Public IP
+Still, we charge for the storage. If we do not need the resource, better to delete.
+
+When we stop the vm and start the VM again, Ip address will change.
+Dynamic ip address.
+If you need specific ip address, keep it as a static IP address. **
+
+Azure container instances.
+
+Manage and Run simple container based applications, we can use Container instances instead of VM, it deploys in seconds.
+Azure App service also we can choose container instances,
+Container orchestration:
+10 instances in Microservice A container
+13 instances in Microservice B container….etc
+
+It needs Container image+configuration
++cluster ( server 1+server2+….)
+It helps: Auto scaling, Load balancing, Service Discovery (Help microservices find another)
+
+
+Storage:
+Storage Types:
+Block
+File, object, Queue…etc there are many
+Hard Disk has Block storage
+File share to share b/w the teams and colleagues…File storage
+You want to able to upload/Download objects using REST API without mounting them onto your VM, Object storage
+
+Azure Storage:
+Managed cloud storage solution.
+Highly Available, Durable, and massively Scalable (up to few petabytes)
+Core Storage services:
+Azure Disks: VM ( Block storage)
+Azure files:
+Azure Tables: Azure cosmos DB (No SQL storage)
+Azure Queues: Messaging queue
+Azure Blobs:
+
+Azure Storage – Data Redundancy types
+LRS, ZRS, GRS, GZRS
+Exploring read Access in storage redundancy options:
+With GRS, GZRS: Replicates data to Secondary regions, however Read/write access only after a failover.
+Read-access storage redundancy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
